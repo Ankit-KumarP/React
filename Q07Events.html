@@ -1,0 +1,40 @@
+<!-- (28/10/2023), 12:19AM -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="box"></div>
+
+    <script type="text/babel">
+        let destination = document.getElementById('box');
+        function Events() {
+            const styleMe = {
+                cursor: "pointer"
+            }
+            const shoot = () => {
+                alert("Just Be Continious! You Gonna Make it for sure.")
+            }
+            const styleH1 = () => {
+                document.body.style.backgroundColor = 'salmon';
+            }
+            return (
+                <>
+                    <h1 onClick={shoot} onMouseOver={styleH1} style={styleMe}>Click Me </h1>
+                </>
+            )
+        }
+        const root = ReactDOM.createRoot(destination);
+        root.render(<Events />)
+    </script>
+</body>
+
+</html>

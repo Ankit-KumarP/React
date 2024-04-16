@@ -1,0 +1,41 @@
+<!-- (29/10/2023), 9:14AM -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="box"></div>
+
+    <script type="text/babel">
+        let destination = document.querySelector('#box');
+        function Styleing() {
+            const secondStyle = {
+                backgroundColor: "blue",
+                color: "pink"
+            }
+            return (
+                <>
+                    <h1 style={{
+                        backgroundColor: "red", color: "black"
+
+                    }}> Ankit kumar </h1>
+                    <h1 style={secondStyle}> Mona Kumar </h1>
+                    <h1 class="heading" style={secondStyle}> HVPS </h1>
+                </>
+            )
+        }
+
+        const root = ReactDOM.createRoot(destination);
+        root.render(<Styleing/>);
+    </script>
+</body>
+
+</html>

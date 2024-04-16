@@ -1,0 +1,34 @@
+<!-- (27/10/2023), 15:57 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <style>
+    h1 {
+      background-color: black;
+      color: white;
+      font-weight: 200px;
+    }
+  </style>
+  <body>
+    <div id="container"></div>
+
+    <script type="text/babel">
+      let destination = document.querySelector("#container");
+      const root = ReactDOM.createRoot(destination);
+      root.render(<h1>Back Again with another surprise!!</h1>);
+    </script>
+  </body>
+</html>

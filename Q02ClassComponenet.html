@@ -1,0 +1,46 @@
+<!-- (27/10/2023), 16:25  | (15/04/2024), 20:01-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <style>
+    div {
+      display: block;
+      width: 50vw;
+      background-color: black;
+      color: white;
+      margin: auto;
+    }
+  </style>
+
+  <body>
+    <div id="container"></div>
+    <script type="text/babel">
+      let destination = document.getElementById("container");
+      class Person extends React.Component {
+        render() {
+          return (
+            <>
+              <div> Ankit Kumar </div>
+              <div> Mona Kumar </div>
+            </>
+          );
+        }
+      }
+      const root = ReactDOM.createRoot(destination);
+      root.render(<Person />);
+    </script>
+  </body>
+</html>

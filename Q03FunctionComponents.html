@@ -1,0 +1,32 @@
+<!-- (27/10/2023), 16:54 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Componets</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="container"></div>
+
+    <script type="text/babel">
+        let destination = document.querySelector('#container');
+        function Book() {
+            return (
+                <>
+                    <h1>Ankit Kumar</h1>
+                    <h2> CTC: 36 LPA </h2>
+                </>
+            )
+        }
+        const root = ReactDOM.createRoot(destination);
+        root.render(<Book/>)
+    </script>
+</body>
+
+</html>
